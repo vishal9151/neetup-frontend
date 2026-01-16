@@ -1,0 +1,136 @@
+.modalContainer {
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Mobile responsive modal container */
+@media (max-width: 480px) {
+    .modalContainer {
+        padding: 0 12px;
+    }
+}
+
+.neetupLogo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #333333;
+}
+
+/* Mobile responsive logo */
+@media (max-width: 480px) {
+    .neetupLogo {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.welcomeText {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 0 10px;
+}
+
+/* Mobile responsive welcome text */
+@media (max-width: 480px) {
+    .welcomeText {
+        font-size: 16px;
+        margin-bottom: 15px;
+        line-height: 1.4;
+    }
+}
+
+.tagsContainer {
+    flex-wrap: nowrap !important;
+}
+
+/* Mobile responsive tags */
+@media (max-width: 480px) {
+    .tagsContainer {
+        margin: 15px 0px 0px 0px !important;
+        overflow-x: auto !important;
+    }
+}
+
+.topicTag {
+    margin-bottom: 4px;
+    font-size: 12px;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+/* Mobile responsive topic tags */
+@media (max-width: 480px) {
+    .topicTag {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+}
+
+.cta {
+    background-color: #333333 !important;
+    color: #FFFFFF !important;
+    width: 100%;
+    font-weight: 700 !important;
+    margin-top: 40px;
+    height: 40px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* Mobile responsive CTA button */
+@media (max-width: 480px) {
+    .cta {
+        margin-top: 30px;
+        height: 44px;
+        font-size: 16px;
+    }
+}
+
+.cta:hover {
+    background-color: #333333 !important;
+    color: #ffffff !important;
+    font-weight: 700 !important;
+}
+
+.cta:disabled {
+    background-color: #33333350 !important;
+}
+
+/* Responsive spacing adjustments */
+@media (max-width: 480px) {
+    .modalContainer :global(.ant-row) {
+        margin-left: -4px !important;
+        margin-right: -4px !important;
+    }
+
+    .modalContainer :global(.ant-col) {
+        padding-left: 4px !important;
+        padding-right: 4px !important;
+    }
+}
+
+/* Ensure modal doesn't overflow on very small screens */
+@media (max-width: 320px) {
+    .modalContainer {
+        padding: 0 8px;
+    }
+
+    .neetupLogo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .welcomeText {
+        font-size: 14px;
+    }
+
+    .cta {
+        height: 40px;
+        font-size: 14px;
+    }
+}
