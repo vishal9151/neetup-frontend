@@ -1,8 +1,8 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import style from "./style.module.css";
 import { Button, Col, Input, message, Row, Slider, Tag } from 'antd';
 import { Base_Url, NEETUP_LOGO, openSameUrlWithJobId, uniqueId } from '../../../constants';
-import { CheckOutlined, PlusOutlined } from '@ant-design/icons';
+import { PlusOutlined } from '@ant-design/icons';
 
 // type for topics array
 interface TopicItem {

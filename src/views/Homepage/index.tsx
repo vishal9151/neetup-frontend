@@ -1,5 +1,5 @@
 import { Button, Col, message, Radio, Row, Space, Tag, Tooltip } from "antd";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./style.module.css";
 import { CopyOutlined, LoadingOutlined } from "@ant-design/icons";
 import { Base_Url, NEETUP_LOGO, Primary_Color } from "../../constants";

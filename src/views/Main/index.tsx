@@ -1,4 +1,3 @@
-import style from "./style.module.css"
 import "./style.css"
 import { useEffect, useState } from "react"
 import { Modal } from "antd"
