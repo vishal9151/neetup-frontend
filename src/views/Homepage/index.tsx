@@ -1,4 +1,4 @@
-import { Button, Col, message, Radio, Row, Space, Tag, Tooltip } from "antd";
+import { Button, Col, message, Radio, Row, Space, Tag } from "antd";
 import { useEffect, useState } from "react";
 import style from "./style.module.css";
 import { CopyOutlined, LoadingOutlined } from "@ant-design/icons";
@@ -149,9 +149,7 @@ function QuestionPage() {
                       </div>
                     </Col>
                     <Col>
-                        <Tooltip title={"Copy Question"}>
-                          <CopyOutlined style={{color: "grey"}} onClick={()=>handleQuestionCopy(q.question)}/>
-                        </Tooltip>
+                        <CopyOutlined style={{color: "grey"}} onClick={()=>handleQuestionCopy(q.question)}/>
                     </Col>
                   </Row>
 
